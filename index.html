@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Overpass:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link href="/src/app.css" rel="stylesheet" />
+    <title>Tailwind</title>
+  </head>
+
+  <!-- bg-gradient-to-t bg-[#fbfbfb] from-[#FCFCFC] via-[#FbFbFb] to-[#f0f0f0] -->
+  <body class="font-main overflow-x-hidden">
+    <header
+      class="h-24 lg:shadow-none flex items-center justify-between lg:py-12 xl:px-56 mx-auto py-12 px-16 shadow-md"
+    >
+      <div>
+          <img
+            class="xl:w-40 md:w-28 lg:w-32 w-24"
+            src="public/images/logo.png"
+            alt="Logo"
+          />
+        
+      </div>
+
+      <div class="lg:hidden block w-12">
+        <label for="check">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-full h-auto"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </label>
+      </div>
+      <input class="hidden group1" type="checkbox" name="check" id="check" />
+
+      <nav class=" lg:block hidden">
+        <ul class="flex xl:gap-12 lg:gap-8 lg:flex-row flex-col">
+          <li>
+            <a
+              class="hover:text-pink-600 text-right group font-semibold"
+              href="#"
+              ><p
+                class="text-sm leading-none tracking-widest font-extralight text-right text-[#ccc] group-hover:text-pink-600"
+              >
+                01
+              </p>
+              <p class="xl:text-lg lg:text-base capitalize leading-none">
+                home
+              </p></a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-pink-600 text-right group font-semibold"
+              href="#"
+              ><p
+                class="text-sm font-main leading-none tracking-widest font-extralight text-right text-[#ccc] group-hover:text-pink-600"
+              >
+                02
+              </p>
+              <p class="xl:text-lg lg:text-base capitalize leading-none">
+                services
+              </p></a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-pink-600 text-right group font-semibold"
+              href="#"
+              ><p
+                class="text-sm font-main leading-none tracking-widest font-extralight text-right text-[#ccc] group-hover:text-pink-600"
+              >
+                03
+              </p>
+              <p class="xl:text-lg lg:text-base capitalize leading-none">
+                pricing
+              </p></a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-pink-600 text-right group font-semibold"
+              href="#"
+              ><p
+                class="text-sm font-main leading-none tracking-widest font-extralight text-right text-[#ccc] group-hover:text-pink-600"
+              >
+                04
+              </p>
+              <p class="xl:text-lg lg:text-base capitalize leading-none">
+                clients
+              </p></a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-pink-600 text-right group font-semibold"
+              href="#"
+              ><p
+                class="text-sm font-main leading-none tracking-widest font-extralight text-right text-[#ccc] group-hover:text-pink-600"
+              >
+                05
+              </p>
+              <p class="xl:text-lg lg:text-base capitalize leading-none">
+                news
+              </p></a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-pink-600 text-right group font-semibold"
+              href="#"
+              ><p
+                class="text-sm font-main leading-none tracking-widest font-extralight text-right text-[#ccc] group-hover:text-pink-600"
+              >
+                06
+              </p>
+              <p class="text-lg lg:text-lg capitalize leading-none">
+                contacts
+              </p></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden lg:block">
+        <a
+          href="#"
+          class="btn flex items-center justify-center bg-blue-500 hover:bg-pink-500"
+          >signup</a
+        >
+      </div>
+    </header>
+    
+       
+    <main>
+      <section class="mb-16">
+        <div class=" mx-auto xl:px-56 px-32 xl:py-16 py-4  md:px-20 md:py-12 grid-2">
+          <div class="md:mb-10">
+            <img  class="lg:w-full" src="public/images/header.png" alt="hero image" />
+          </div>
+          <div class="lg:text-left md:text-center">
+            <h3 class="head-line capitalize">multipurpose landing templates</h3>
+            <h1 class="head">Beautifully simple, code</h1>
+            <p class="head-text">
+              Codelander is a beautifully simple, clean and lightweight landing
+              page template for all types of businesses, with bold and bright
+              colours.
+            </p>
+            <a href="#" class="btn bg-pink-500 hover:bg-blue-500">learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <!--  
+
+      <section class="px-56 py-16 relative">
+        <img
+          class="absolute bottom-[45%] -right-20 w-[22%]"
+          src="public/images/strategy-section-bg.png"
+          alt="accent"
+        />
+        <div class="container mx-auto flex gap-8 items-center">
+          <div class="flex flex-col text-center space-y-2 items-center">
+            <img class="h-20" src="public/images/strategy-1.png" alt="icon" />
+            <h3
+              class="capitalize text-lg leading-[3] font-semibold text-header"
+            >
+              strategy
+            </h3>
+            <p class="leading-normal font-light">
+              We'll work with you to develop the right strategy
+            </p>
+          </div>
+          <div
+            class="flex flex-col space-y-2 items-center justify-center text-center"
+          >
+            <img class="h-20" src="public/images/strategy-2.png" alt="icon" />
+            <h3
+              class="capitalize text-xl leading-[3] font-semibold text-header"
+            >
+              Automation
+            </h3>
+            <p class="leading-normal font-light">
+              Work synchronization and automated services
+            </p>
+          </div>
+          <div
+            class="flex flex-col space-y-2 items-center justify-center text-center"
+          >
+            <img class="h-20" src="public/images/strategy-3.png" alt="icon" />
+            <h3
+              class="capitalize text-xl leading-[3] font-semibold text-header"
+            >
+              Deployment
+            </h3>
+            <p class="leading-normal font-light">
+              Dedicated servers to deploy and test application
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col space-y-2 items-center justify-center text-center"
+          >
+            <img class="h-20" src="public/images/strategy-4.png" alt="icon" />
+            <h3
+              class="capitalize text-xl leading-[3] font-semibold text-header"
+            >
+              education
+            </h3>
+            <p class="leading-normal font-light">
+              Stay informed on all our tools and technologies
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-56 py-16 relative">
+        <img
+          class="absolute bottom-[25%] -left-52 w-[22%]"
+          src="public/images/services-section-bg.png"
+          alt=""
+        />
+        <div class="container mx-auto !text-lg grid-2">
+          <div>
+            <h3 class="head-line !text-[22px]">our services</h3>
+            <h2 class="head !text-5xl">solving problems</h2>
+            <p class="head-text">
+              This is a great section to introduce your company and showcase
+              your featured services.
+            </p>
+
+            <a
+              href="#"
+              class="!mb-6 capitalize w-full flex justify-between px-8 py-4 bg-blue-500 rounded-full text-white font-bold hover:bg-blue-400 transition-colors duration-200 ease-none"
+              ><span>website design</span> <span>+</span></a
+            >
+            <a
+              href="#"
+              class="capitalize w-full flex justify-between px-8 py-4 bg-blue-500 rounded-full text-white font-bold hover:bg-blue-400 transition-colors duration-200 ease-none"
+              ><span>application development</span> <span>+</span></a
+            >
+          </div>
+          <div>
+            <img src="public/images/services-header.png" alt="header img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="px-56 py-16">
+        <div class="container mx-auto grid-2">
+          <div>
+            <img
+              src="public/images/services-sales-header.png"
+              alt="header img"
+            />
+          </div>
+          <div>
+            <h3 class="head-line !text-[22]">our services</h3>
+            <h2 class="head !text-5xl">sales growth</h2>
+            <p class="head-text">
+              You can talk about your secondary services here, or maybe promote
+              your excellent customer service approach. Always grab your website
+              visitors' attention.
+            </p>
+            <a
+              href="#"
+              class="btn bg-pink-500 hover:bg-blue-500 transition-color duration-200 ease-none"
+              >view pricing</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="px-56 py-16">
+        <div class="container mx-auto">
+          <div class="flex flex-col justify-center items-center">
+            <h2 class="head !text-5xl">pricing</h2>
+            <p class="head-text max-w-2xl text-center">
+              Offer multiple packages or monthly subscriptions? Why not showcase
+              your featured price plans here, bold and beautifully.
+            </p>
+          </div>
+
+          <div
+            class="sm:flex-col flex-row flex justify-between gap-10 items-center"
+          >
+            <div class="hover:shadow-shape rounded-shape p-12 text-center">
+              <h2 class="head !mb-0 !leading-none">$199</h2>
+              <p class="text-blue-400 text-xl font-semibold capitalize">
+                basic
+              </p>
+              <p class="my-6 text-lg font-light">
+                Starter plan with all the basics included
+              </p>
+              <ul class="flex flex-col gap-3 my-9">
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span class="text-sm">core business system </span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-sm">team management</span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current text-gray-200 h-svg w-svg"
+                  >
+                    <circle cx="50" cy="50" r="50" />
+                  </svg>
+                  <span class="text-sm">dual infrastructure</span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current text-gray-200 h-svg w-svg"
+                  >
+                    <circle cx="50" cy="50" r="50" />
+                  </svg>
+                  <span class="text-sm">customized features</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn !px-10 w-fit inline-block text-lg bg-blue-500 hover:bg-pink-500"
+                >enquire</a
+              >
+            </div>
+
+            <div
+              class="border-8 border-blue-300 border-dashed rounded-shape p-12 text-center"
+            >
+              <p
+                class="uppercase text-xs text-white font-secondary font-semibold bg-blue-300 inline-block mb-4 py-2 px-4 rounded-full"
+              >
+                popular
+              </p>
+              <h2 class="head !mb-0 !leading-none">$499</h2>
+              <p class="text-blue-400 text-xl font-semibold capitalize">
+                growth
+              </p>
+              <p class="my-6 text-lg font-light">
+                The sensible option for growing companies
+              </p>
+              <ul class="flex flex-col gap-3 my-9">
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>core business system </span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>team management</span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>dual infrastructure</span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current text-gray-200 h-svg w-svg"
+                  >
+                    <circle cx="50" cy="50" r="50" />
+                  </svg>
+                  <span>customized features</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn !px-10 w-fit inline-block text-lg bg-blue-500 hover:bg-pink-500"
+                >enquire</a
+              >
+            </div>
+
+            <div class="hover:shadow-shape rounded-shape p-12 text-center">
+              <h2 class="head !mb-0 !leading-none">$1299</h2>
+              <p class="text-blue-400 text-xl font-semibold capitalize">
+                corporate
+              </p>
+              <p class="my-6 text-lg font-light">
+                Everything a global company needs
+              </p>
+              <ul class="flex flex-col gap-3 my-9">
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>core business system </span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>team management</span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>dual infrastructure</span>
+                </li>
+                <li class="flex gap-2 text-sm font-light items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 fill-current text-blue-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>customized features</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn !px-10 w-fit inline-block text-lg bg-blue-500 hover:bg-pink-500"
+                >enquire</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-56 py-16 relative">
+        <img
+          class="absolute bottom-[45%] right-0"
+          src="public/images/blog-section-right-bg.png"
+          alt="accent"
+        />
+        <img
+          class="absolute bottom-[25%] -left-52 w-[22%]"
+          src="public/images/pricing-section-right-bg.png"
+          alt=""
+        />
+        <div class="container mx-auto mb-8">
+          <div class="flex flex-col items-center w-full">
+            <h3 class="head-line !text-[22px]">our clients</h3>
+            <h2 class="head !text-5xl">Client Showcase</h2>
+          </div>
+
+          <div class="flex items-center justify-center gap-28 mb-4">
+            <img
+              class="h-24 w-auto"
+              src="public/images/logo1.png"
+              alt="Brand Logo"
+            />
+            <img
+              class="h-24 w-auto"
+              src="public/images/logo2.png"
+              alt="Brand Logo"
+            />
+            <img
+              class="h-24 w-auto"
+              src="public/images/logo3.png"
+              alt="Brand Logo"
+            />
+            <img class="h-24" src="public/images/logo4.png" alt="Brand Logo" />
+          </div>
+          <div class="flex justify-center items-center gap-4">
+            <div class="w-2.5 h-2.5 cursor-default rounded-full bg-blue-400">
+              &nbsp;
+            </div>
+            <div
+              class="w-2.5 h-2.5 cursor-default rounded-full hover:bg-blue-300 bg-[#ccc]"
+            >
+              &nbsp;
+            </div>
+            <div
+              class="w-2.5 h-2.5 cursor-default rounded-full hover:bg-blue-300 bg-[#ccc]"
+            >
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-56 py-16">
+        <div class="container">
+          <div class="flex flex-col items-center">
+            <h3 class="head-line !text-[22px]">recent updates</h3>
+            <h2 class="head">featured stories</h2>
+          </div>
+
+          <div class="flex gap-10 items-center">
+            <div
+              class="flex flex-col items-center drop-shadow-lg hover:drop-shadow-none rounded-shape py-16 px-11 bg-white hover:shadow-shape"
+            >
+              <div class="w-60">
+                <img
+                  class="my-5"
+                  src="public/images/blog-card-1.png"
+                  alt="remote"
+                />
+              </div>
+              <h3
+                class="font-secondary capitalize text-xl leading-loose font-bold text-header"
+              >
+                remote working
+              </h3>
+              <p class="mb-6 mt-1 text-sm font-light text-center">
+                Making it easier to connect with every client worldwide
+              </p>
+
+              <a
+                href="#"
+                class="text-lg text-blue-300 font-secondary font-bold capitalize hover:text-pink-400"
+                >Read more</a
+              >
+            </div>
+            <div
+              class="flex flex-col items-center rounded-shape py-16 px-11 bg-white drop-shadow-lg hover:shadow-shape hover:drop-shadow-none"
+            >
+              <div class="w-60">
+                <img
+                  src="public/images/blog-card-2.png"
+                  alt="remote"
+                  class="mb-5"
+                />
+              </div>
+              <h3
+                class="font-secondary capitalize text-xl leading-loose font-bold text-header"
+              >
+                google rankings
+              </h3>
+              <p
+                class="text-gray-300 text-lg capitalize font-medium font-secondary"
+              >
+                keyword
+              </p>
+              <p class="mb-6 mt-7 text-sm font-light text-center">
+                We've ranked number one on Google for multiple keywords. Read
+                about our SEO strategies
+              </p>
+
+              <a href="#" class="btn bg-blue-500 hover:bg-pink-500"
+                >Read more</a
+              >
+            </div>
+
+            <div
+              class="flex flex-col items-center rounded-shape py-16 px-11 bg-white drop-shadow-lg hover:drop-shadow-none hover:shadow-shape"
+            >
+              <div class="w-60">
+                <img
+                  class="mb-5"
+                  src="public/images/blog-card-3.png"
+                  alt="remote"
+                />
+              </div>
+              <h3
+                class="font-secondary capitalize text-xl leading-loose font-bold text-header"
+              >
+                communication
+              </h3>
+              <p class="mb-6 mt-1 text-sm font-light text-center">
+                We've made our client support services easy to access
+              </p>
+
+              <a
+                href="#"
+                class="text-lg text-blue-300 font-secondary font-bold capitalize hover:text-pink-400"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-56 py-16">
+        <div class="container grid grid-cols-2 items-center">
+          <div class="px-4">
+            <h3 class="head-line !m-0 !text-[22px]">contacts</h3>
+            <h2 class="head mb-7 !text-[45px] !leading-none">
+              Questions? <br />
+              Get in touch
+            </h2>
+            <p class="head-text mb-7">
+              We'll be happy to help answer any of your questions. Send us an
+              email and we'll get back to you shortly.
+            </p>
+            <a href="#" class="btn hover:bg-blue-500 bg-pink-500"
+              >send an email</a
+            >
+          </div>
+          <div class="px-4">
+            <img src="public/images/contact-header-img.png" alt="header img" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="px-56 py-16 bg-header text-white">
+        <div class="container grid grid-cols-4 gap-x-20 mb-14">
+          <div>
+            <img
+              src="public/images/logo_footer.png"
+              alt="Logo"
+              class="w-32 mb-5"
+            />
+            <p class="font-secondary">
+              A beautiful landing page template by Codefest.
+            </p>
+          </div>
+          <div>
+            <h2 class="capitalize text-3xl font-bold mb-7">about</h2>
+            <p class="font-secondary font-light">
+              We like to do business at Codelander HQ to our clients'
+              satisfaction.
+            </p>
+          </div>
+          <div>
+            <h2 class="capitalize text-3xl font-bold mb-7">contact us</h2>
+
+            <ul class="flex flex-col gap-3">
+              <li
+                class="flex items-start gap-2 font-secondary leading-normal text-sm"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-7 h-7 fill-current text-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>123 Business Centre London SW1A 1AA</span>
+              </li>
+              <li
+                class="flex items-center font-secondary leading-normal text-sm gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-4 h-4 fill-current text-icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                <span>0123456789</span>
+              </li>
+              <li
+                class="flex items-center font-secondary leading-normal text-sm gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-4 h-4 fill-current text-icon"
+                >
+                  <path
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                  />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                  />
+                </svg>
+
+                <span>mail@domain.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="capitalize text-3xl font-bold mb-7 group">socials</h2>
+            <div class="flex gap-5">
+              <ion-icon
+                class="text-2xl group-hover:text-blue-300 hover:text-blue-500"
+                name="logo-twitter"
+              ></ion-icon>
+              <ion-icon
+                class="text-2xl group-hover:text-blue-300 hover:text-blue-500"
+                name="logo-instagram"
+              ></ion-icon>
+              <ion-icon
+                class="text-2xl group-hover:text-blue-300 hover:text-blue-500"
+                name="logo-facebook"
+              ></ion-icon>
+              <ion-icon
+                class="text-2xl group-hover:text-blue-300 hover:text-blue-500"
+                name="logo-linkedin"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <p class="font-light text-center text-[#D4E5FF]">
+          &copy; 2020
+          <a
+            href="#"
+            class="font-semibold hover:underline-offset-1 hover:underline"
+            >Codefest</a
+          >
+          &trade; . All Rights Reserved.
+        </p>
+      </footer>
+    </main> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

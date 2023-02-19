@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .head {
+    @apply font-secondary font-[800] text-6xl text-header leading-tight mb-6;
+  }
+
+  .btn {
+    @apply md:text-lg font-semibold font-secondary capitalize
+     text-white rounded-full py-3 px-10 transition duration-200  inline-block;
+  }
+
+  .head-line {
+    @apply font-main font-normal text-[27px] leading-tight mb-2.5 text-header;
+  }
+
+  .head-text {
+    @apply font-main text-lg font-light leading-normal tracking-wide mb-9;
+  }
+}
+
+@layer base {
+  .grid-2 {
+    @apply grid lg:grid-cols-2 md:grid-cols-1 items-center xl:gap-x-24 lg:gap-x-20;
+  }
+}

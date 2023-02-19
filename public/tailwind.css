@@ -13,7 +13,7 @@
   }
 
   .head-line {
-    @apply font-main font-normal text-[27px] leading-tight mb-2.5 text-header;
+    @apply font-main font-normal text-[27px] leading-normal mb-2.5 text-header;
   }
 
   .head-text {

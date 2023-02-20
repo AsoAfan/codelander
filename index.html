@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden text-[72%] md:text-[100%]">
+<html lang="en" class="overflow-x-hidden md:text-[100%]">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,11 +29,11 @@
   <!-- bg-gradient-to-t bg-[#fbfbfb] from-[#FCFCFC] via-[#FbFbFb] to-[#f0f0f0] -->
   <body class="font-main overflow-x-hidden">
     <header
-      class="h-20 py-12 px-4 shadow-md flex items-center justify-between lg:py-12 lg:shadow-none xl:px-56 mx-auto"
+      class="h-20 py-12 px-4 shadow-md flex items-center justify-between md:px-8 md:py-6 lg:py-12 lg:shadow-none xl:px-12 2xl:px-52"
     >
       <div>
         <img
-          class="xl:w-40 md:w-28 lg:w-32 w-24"
+          class="xl:w-40 md:w-24 lg:w-32 w-24"
           src="public/images/logo.png"
           alt="Logo"
         />
@@ -156,10 +156,10 @@
       </div>
     </header>
 
-    <main>
-      <section class="mb-8">
+    <main class="flex flex-col items-center">
+      <section class="container mb-8 flex justify-center">
         <div
-          class="mx-auto px-8 py-16 md:px-20 md:py-12 xl:px-56 xl:py-16 grid-2"
+          class="container px-8 py-16 md:px-20 md:py-12 xl:px-12 xl:py-16 grid-2 2xl:px-52"
         >
           <div class="lg:mb-0 mb-10">
             <img
@@ -168,8 +168,10 @@
               alt="hero image"
             />
           </div>
-          <div class="lg:text-left text-center">
-            <h3 class="head-line capitalize text-center lg:text-left">
+          <div class="text-center lg:text-left">
+            <h3
+              class="head-line capitalize text-center lg:text-left md:text-center"
+            >
               multipurpose landing templates
             </h3>
             <h1 class="head">Beautifully simple, code</h1>
@@ -183,30 +185,33 @@
         </div>
       </section>
 
-      <section class="px-20 py-4 md:px-6 md:py12 xl:px-56 xl:py-16 relative">
+      <section
+        class="px-10 py-4 md:px-6 md:py-12 lg:px-18 xl:px-12 xl:py-16 relative 2xl:px-48"
+      >
         <img
           class="absolute bottom-[45%] -right-20 w-[22%]"
           src="public/images/strategy-section-bg.png"
           alt="accent"
         />
         <div
-          class="container mx-auto flex flex-col items-center gap-12 md:flex-row md:flex-wrap md:gap-0"
+          class="container flex flex-col justify-center items-center gap-12 md:flex-row md:flex-wrap md:justify-center md:gap-7 md:items-center lg:gap-0 lg:justify-center"
         >
-          <div class="flex flex-col text-center items-center px-4">
+          <div class="tst">
             <img class="h-20" src="public/images/strategy-1.png" alt="icon" />
             <h3
-              class="capitalize text-lg leading-loose font-semibold text-header"
+              class="capitalize text-lg leading-loose font-semibold text-header md:leading-[3]"
             >
               strategy
             </h3>
-            <p class="leading-normal font-light max-w-xs">
+            <p class="leading-normal font-light max-w-[300px]">
               We'll work with you to develop the right strategy
             </p>
           </div>
-          <div class="flex flex-col text-center items-center px-4">
+
+          <div class="tst">
             <img class="h-20" src="public/images/strategy-2.png" alt="icon" />
             <h3
-              class="capitalize text-lg leading-loose font-semibold text-header"
+              class="capitalize text-lg leading-loose font-semibold text-header md:leading-[3]"
             >
               Automation
             </h3>
@@ -214,10 +219,11 @@
               Work synchronization and automated services
             </p>
           </div>
-          <div class="flex flex-col items-center justify-center text-center">
+
+          <div class="tst">
             <img class="h-20" src="public/images/strategy-3.png" alt="icon" />
             <h3
-              class="capitalize text-xl leading-loose font-semibold text-header"
+              class="capitalize text-xl leading-loose font-semibold text-header md:leading-[3]"
             >
               Deployment
             </h3>
@@ -226,10 +232,10 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center justify-center text-center">
+          <div class="tst">
             <img class="h-20" src="public/images/strategy-4.png" alt="icon" />
             <h3
-              class="capitalize text-xl leading-loose font-semibold text-header"
+              class="capitalize text-xl leading-loose font-semibold text-header md:leading-[3]"
             >
               education
             </h3>

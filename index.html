@@ -159,7 +159,7 @@
     <main class="flex flex-col items-center">
       <section class="container mb-8 flex justify-center">
         <div
-          class="container px-8 py-16 md:px-20 md:py-12 xl:px-12 xl:py-16 grid-2 2xl:px-52"
+          class="container px-6 py-16 md:px-20 md:py-12 xl:px-12 xl:py-16 grid-2 2xl:px-52"
         >
           <div class="lg:mb-0 mb-10">
             <img
@@ -245,19 +245,18 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- 
-
-      <section class="px-56 py-16 relative">
+      <section
+        class="px-4 md:px-16 2xl:px-56 py-16 relative text-center lg:text-left"
+      >
         <img
           class="absolute bottom-[25%] -left-52 w-[22%]"
           src="public/images/services-section-bg.png"
           alt=""
         />
         <div class="container mx-auto !text-lg grid-2">
-          <div>
-            <h3 class="head-line !text-[22px]">our services</h3>
+          <div class="row-start-2 lg:row-start-1">
+            <h3 class="head-line !mb-0 mt-6 !text-[22px]">our services</h3>
             <h2 class="head !text-5xl">solving problems</h2>
             <p class="head-text">
               This is a great section to introduce your company and showcase
@@ -271,15 +270,22 @@
             >
             <a
               href="#"
-              class="capitalize w-full flex justify-between px-8 py-4 bg-blue-500 rounded-full text-white font-bold hover:bg-blue-400 transition-colors duration-200 ease-none"
+              class="text-left items-center capitalize w-full flex justify-between px-8 py-2.5 lg:py-4 bg-blue-500 rounded-full text-white font-bold hover:bg-blue-400 transition-colors duration-200 ease-none"
               ><span>application development</span> <span>+</span></a
             >
           </div>
           <div>
-            <img src="public/images/services-header.png" alt="header img" />
+            <img
+              class="row-start-1 lg:row-start-2"
+              src="public/images/services-header.png"
+              alt="header img"
+            />
           </div>
         </div>
       </section>
+    </main>
+
+    <!-- 
 
       <section class="px-56 py-16">
         <div class="container mx-auto grid-2">

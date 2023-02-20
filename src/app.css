@@ -421,13 +421,8 @@ video {
 
 .grid-2 {
   display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   align-items: center;
-}
-
-@media (min-width: 768px) {
-  .grid-2 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 1024px) {
@@ -690,6 +685,14 @@ video {
   right: 0px;
 }
 
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
 .\!m-0 {
   margin: 0px !important;
 }
@@ -756,6 +759,22 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.\!mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -1069,6 +1088,11 @@ video {
   padding-right: 14rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1092,6 +1116,25 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1395,8 +1438,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
+  .md\:row-start-2 {
+    grid-row-start: 2;
   }
 
   .md\:w-24 {
@@ -1448,6 +1491,11 @@ video {
     padding-bottom: 1.5rem;
   }
 
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .md\:text-center {
     text-align: center;
   }
@@ -1462,6 +1510,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .lg\:row-start-2 {
+    grid-row-start: 2;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1501,6 +1557,11 @@ video {
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:text-left {
@@ -1558,5 +1619,15 @@ video {
   .\32xl\:px-52 {
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .\32xl\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .\32xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
